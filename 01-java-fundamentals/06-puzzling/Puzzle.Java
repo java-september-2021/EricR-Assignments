@@ -10,13 +10,13 @@ public class Puzzle{
         }
         return randArray;
     }
-    public static letterGenerator(){
+    public static Character charGenerator(){
         Random random = new Random();
-        ArrayList<Character> charlist = new ArrayList<Character>();
-        for(char c = 'a', c,= 'z'; ++c){
-            charlist.add(c);
+        ArrayList<Character> charList = new ArrayList<Character>();
+        for(char c = 'a'; c<='z'; ++c){
+            charList.add(c);
         }
-        Charcter charReturn = charList.get(random.nextInt(26));
+        Character charReturn = charList.get(random.nextInt(26));
         return charReturn;
     }
     public static String generatePassword(){
